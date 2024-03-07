@@ -1,11 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-Use App\Http\Controllers\ListTiketController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ListBarangController115;
+
+
+
 
 // Route::get('/listbarang/{id}/{nama}', function($id, $nama){
 // return view('list_barang', compact('id', 'nama'));
 // });
 
-Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
-Route::get('/tiket', [ListTiketController::class, 'index']);
+route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/list_barang', [ListBarangController::class, 'tampilkan']);
+Route::get('/login', [LoginController::class, 'login']);
+Route::get('/listbarang115', [ListBarangController115::class, 'index']);
