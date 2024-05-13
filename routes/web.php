@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListBarangController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ListBarangController115;
+use App\Http\Controllers\DaftarController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,3 +33,12 @@ route::prefix('admin')->group(function (){
 Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
 
 Route::get('/login', [LoginController::class, 'login']);
+Route::get('/listbarang115', [ListBarangController115::class, 'index']);
+Route::get('/Daftar', [DaftarController::class, 'daftar']);
+
+Route::get('/daftar', function(){
+    return view('daftar');
+});
+Route::get('/beranda', function(){
+    return view('beranda');
+});
