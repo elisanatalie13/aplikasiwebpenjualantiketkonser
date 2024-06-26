@@ -27,17 +27,12 @@
     }
   </style>
 </head>
-<footer>
-  <div class="bg-yellow-100 items-center justify-center grid grid-cols-5 p-5">
-    <div class="section flex flex-col">
-      <h1 class="text-black font-bold">Alamat : </h1>
-      <p class="text-black text-sm"> JL Ahmad Yani Batam Kota, <br>
-        Kota Batam, Kepulauan Riau
-      </p>
-    </div>
-    <div class="spacer"></div>
-    <div class="copyright text-center text-black font-medium bg-warning p-2">
-    <h3>&copy;2024 Hartix </h3><i class="far fa-copyright"></i>
-</div>
-</footer>
+<footer class="footer footer-center p-10 bg-[#A69279] text-black">
+        <aside>
+            <p class="font-bold">
+                Alamat: Jl. Ahmad Yani Batam Kota, <br> Kota Batam, Kepulauan Riau
+            </p>
+            <p>Copyright © 2024 - All rights reserved</p>
+        </aside>
+    </footer>
 </html>
