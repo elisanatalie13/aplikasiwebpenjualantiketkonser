@@ -9,33 +9,31 @@ use App\Http\Controllers\PembelianController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StatusController;
 
+// Route::get('/listbarang/{id}/{nama}', function($id, $nama){
+// return view('list_barang', compact('id', 'nama'));
+// });
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 // routes/web.php
-route::get('/user/{id}', function ($id){
-    return 'User dengan ID'. $id;
+Route::get('/user/{id}', function ($id){
+    return 'User dengan ID ' . $id;
 });
 
 // routes/web.php
-route::prefix('admin')->group(function (){
-    route::get('dashboard', function(){
+Route::prefix('admin')->group(function (){
+    Route::get('dashboard', function(){
         return 'Admin Dashboard';
     });
 
-    route::get('/users', function (){
+    Route::get('/users', function (){
         return 'Admin Users';
     });
 });
 
-// route::get('/listbarang/{id}/{nama}', function($id, $nama){
-//     return view('list_barang', compact('id', 'nama'));
-// });
-
 Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
-
 Route::get('/login', [LoginController::class, 'login']);
 Route::get('/listbarang115', [ListBarangController115::class, 'index']);
 Route::get('/Daftar', [DaftarController::class, 'daftar']);

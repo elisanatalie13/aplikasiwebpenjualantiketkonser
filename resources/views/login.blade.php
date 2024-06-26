@@ -33,7 +33,10 @@
       <label for="password" class="block mt-4 mb-2 text-poppins font-medium text-black-500">Password</label>
       <input type="password" id="password" name="password" class="bg-white border-gray-300 text-black-900 text-sm rounded-lg focus:ring-black-500 focus:border-gray-500 block w-full p-2.5" required><br>
       <button type="submit" class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-gray-300 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm sm:w-full px-2 py-2.5 mx-auto">Masuk</button>
-      </form>
+    </form>
+  </div>
+  <div class="footer">
+    @include('components.footer')
   </div>
 </body>
-@include('components.footer')
+</html>

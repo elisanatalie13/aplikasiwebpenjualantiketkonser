@@ -1,1 +1,1 @@
-coba kita buat
+coba buat aja
